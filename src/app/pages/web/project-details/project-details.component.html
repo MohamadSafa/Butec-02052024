@@ -1,0 +1,434 @@
+<section class="multi-details-header-container">
+  <div class="details-header-content">
+    <div *ngIf="expertiseId == 7" class="details-header-body red-left-border">
+      <a class="detials-header-title move-left-15"
+        ><img
+          src="./assets/icons/back-arrow.svg"
+          alt="join image"
+          class="ic_arrow"
+        />
+        <span class="detials-header-title"><strong>PROJECTS</strong></span></a
+      >
+      <div class="margin-bottom-16">
+        <span class="details-header-subtitle">
+          {{ projectTitle }}
+        </span>
+      </div>
+      <div>
+        <img
+          src="./assets/icons/engineering_contracting_red.svg"
+          alt="Business Line image"
+          class="details-header-icon"
+        />
+      </div>
+      <!--<div class="details-space">
+        <img
+          src="./assets/images/home_image.jpg"
+          alt="Business Line image"
+          class="details-icon"
+        />
+      </div>-->
+    </div>
+    <div
+      *ngIf="expertiseId == 6"
+      class="details-header-body cerulean-left-border"
+    >
+      <a class="detials-header-title move-left-15"
+        ><img
+          src="./assets/icons/back-arrow.svg"
+          alt="join image"
+          class="ic_arrow"
+        />
+        <span class="detials-header-title"><strong>PROJECTS</strong></span></a
+      >
+      <div class="margin-bottom-16">
+        <span class="details-header-subtitle">
+          {{ projectTitle }}
+        </span>
+      </div>
+      <div>
+        <img
+          src="./assets/icons/electro_mechincal_cerulean.svg"
+          alt="Business Line image"
+          class="details-header-icon"
+        />
+      </div>
+      <!--<div class="details-space">
+        <img
+          src="./assets/images/home_image.jpg"
+          alt="Business Line image"
+          class="details-icon"
+        />
+      </div>-->
+    </div>
+    <div *ngIf="expertiseId == 9" class="details-header-body teal-left-border">
+      <a class="detials-header-title move-left-15"
+        ><img
+          src="./assets/icons/back-arrow.svg"
+          alt="join image"
+          class="ic_arrow"
+        />
+        <span class="detials-header-title"><strong>PROJECTS</strong></span></a
+      >
+      <div class="margin-bottom-16">
+        <span class="details-header-subtitle">
+          {{ projectTitle }}
+        </span>
+      </div>
+      <div>
+        <img
+          src="./assets/icons/facility_services_teal.svg"
+          alt="Business Line image"
+          class="details-header-icon"
+        />
+      </div>
+      <!--<div class="details-space">
+        <img
+          src="./assets/images/home_image.jpg"
+          alt="Business Line image"
+          class="details-icon"
+        />
+      </div>-->
+    </div>
+    <div
+      *ngIf="expertiseId == 12"
+      class="details-header-body green-left-border"
+    >
+      <a class="detials-header-title move-left-15"
+        ><img
+          src="./assets/icons/back-arrow.svg"
+          alt="join image"
+          class="ic_arrow"
+        />
+        <span class="detials-header-title"><strong>PROJECTS</strong></span></a
+      >
+      <div class="margin-bottom-16">
+        <span class="details-header-subtitle">
+          {{ projectTitle }}
+        </span>
+      </div>
+      <div>
+        <img
+          src="./assets/icons/new icon for Utility Services.jpg"
+          alt="Business Line image"
+          class="details-header-icon"
+        />
+      </div>
+      <!--<div class="details-space">
+        <img
+          src="./assets/images/home_image.jpg"
+          alt="Business Line image"
+          class="details-icon"
+        />
+      </div>-->
+    </div>
+  </div>
+  <div class="details-header-img-container">
+    <img
+      src="{{ image }}"
+      alt="Project Main image"
+      class="details-header-img img-fluid"
+    />
+  </div>
+</section>
+
+<section class="page-text-container">
+  <div class="page-text-body">
+    <p class="page-paragraph-desc margin-bottom-64">
+      {{ description }}
+    </p>
+  </div>
+</section>
+
+<section class="page-text-container">
+  <div class="page-row-body">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+        >
+          <span class="details-info-title">Type of Contract</span><br />
+          <div class="details-info-space">
+            <span class="details-info-subtitle">{{ typeOfContract }}</span>
+          </div>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+        >
+          <span class="details-info-title">Role of BUTEC</span><br />
+          <div class="details-info-space">
+            <span class="details-info-subtitle">{{ roleOfButec }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+        >
+          <span class="details-info-title">Contractor for process</span><br />
+          <div class="details-info-space">
+            <span class="details-info-subtitle">{{
+              contractorForProcess
+            }}</span>
+          </div>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+        >
+          <span class="details-info-title">Execution Period</span><br />
+          <div class="details-info-space">
+            <span class="details-info-subtitle">{{ executionPeriod }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+        >
+          <span class="details-info-title">Financing</span><br />
+          <div class="details-info-space">
+            <span class="details-info-subtitle">{{ financing }}</span>
+          </div>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+        >
+          <span class="details-info-title">Employer</span><br />
+          <div class="details-info-space">
+            <span class="details-info-subtitle">{{ employer }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+        >
+          <span class="details-info-title">Delegated Employer</span><br />
+          <div class="details-info-space-last details-info-space-media">
+            <span class="details-info-subtitle">{{ delegatedEmployer }}</span>
+          </div>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+        >
+          <span class="details-info-title">Location</span><br />
+          <div class="details-info-space-last">
+            <span class="details-info-subtitle">{{ location }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-text-container">
+  <div class="page-row-body">
+    <div class="container">
+      <div class="row">
+        <div
+          *ngFor="let attachment of attachmentsList"
+          class="col-6 col-xs-6 col-s-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 details-img-container"
+        >
+          <img
+            src="{{ imageUrl }}{{ attachment.Name }}"
+            alt="Business Line image"
+            class="details-img img-fluid"
+          />
+        </div>
+        <!--<div
+        class="col-6 col-xs-6 col-s-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 details-img-container"
+      >
+        <img
+          src="./assets/images/2.webp"
+          alt="Business Line image"
+          class="details-img img-fluid"
+        />
+      </div>
+      <div
+        class="col-6 col-xs-6 col-s-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 details-img-container"
+      >
+        <img
+          src="./assets/images/3.webp"
+          alt="Business Line image"
+          class="details-img img-fluid"
+        />
+      </div>
+      <div
+        class="col-6 col-xs-6 col-s-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 details-img-container"
+      >
+        <img
+          src="./assets/images/home_image.jpg"
+          alt="Business Line image"
+          class="details-img img-fluid"
+        />
+      </div>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="other-container">
+  <h2 class="other-title">Other projects</h2>
+  <div class="other-imgs-container">
+    <div class="container container-to-center">
+      <div class="row">
+        <div
+          *ngFor="let project of otherProjects"
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body other-img-space"
+        >
+          <img
+            *ngIf="expertiseId == 7"
+            src="./assets/icons/engineering_contracting_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon red-background"
+          />
+          <img
+            *ngIf="expertiseId == 6"
+            src="./assets/icons/electro_mechincal_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon cerulean-background"
+          />
+          <img
+            *ngIf="expertiseId == 9"
+            src="./assets/icons/facility_services_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon teal-background"
+          />
+          <img
+            *ngIf="expertiseId == 12"
+            src="./assets/icons/new icon for Utility Services.jpg"
+            alt="Business Line icon"
+            class="other-mini-icon green-background"
+          />
+          <img
+            src="{{ imageUrl }}{{ project.Image }}"
+            alt="Business Line image"
+            class="other-img"
+          />
+          <div class="other-info-container">
+            <h6 class="other-info-title">
+              {{ project.Title }}
+            </h6>
+            <p class="other-info-text">{{ project.Location }}</p>
+          </div>
+        </div>
+        <!--<div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body other-img-space"
+        >
+          <img
+            src="./assets/icons/engineering_contracting_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon red-background"
+          />
+          <img
+            src="./assets/images/Talex-Aluminium-Extrusion-Factory---UAE.webp"
+            alt="Business Line image"
+            class="other-img"
+          />
+
+          <div class="other-info-container">
+            <h6 class="other-info-title">Talex-Aluminium-Extrusion-Factory</h6>
+            <p class="other-info-text">UAE</p>
+          </div>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body other-img-space"
+        >
+          <img
+            src="./assets/icons/engineering_contracting_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon red-background"
+          />
+          <img
+            src="./assets/images/Umm-Qasr-Power-Plant---Qatar.webp"
+            alt="Business Line image"
+            class="other-img"
+          />
+
+          <div class="other-info-container">
+            <h6 class="other-info-title">Umm-Qasr-Power-Plant</h6>
+            <p class="other-info-text">Qatar</p>
+          </div>
+        </div>-->
+        <!--<div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body other-img-space"
+        >
+          <img
+            *ngIf="expertiseId == 7"
+            src="./assets/icons/engineering_contracting_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon red-background"
+          />
+          <img
+            *ngIf="expertiseId == 6"
+            src="./assets/icons/electro_mechincal_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon cerulean-background"
+          />
+          <img
+            *ngIf="expertiseId == 9"
+            src="./assets/icons/facility_services_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon teal-background"
+          />
+          <img
+            *ngIf="expertiseId == 12"
+            src="./assets/icons/new icon for Utility Services.jpg"
+            alt="Business Line icon"
+            class="other-mini-icon green-background"
+          />
+          <img
+            src="./assets/images/Tripoli Sea Outfall - Lebanon.webp"
+            alt="Business Line image"
+            class="other-img"
+          />
+
+          <div class="other-info-container">
+            <h6 class="other-info-title">Tripoli Sea Outfall</h6>
+            <p class="other-info-text">Lebanon</p>
+          </div>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body"
+        >
+          <img
+            *ngIf="expertiseId == 7"
+            src="./assets/icons/engineering_contracting_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon red-background"
+          />
+          <img
+            *ngIf="expertiseId == 6"
+            src="./assets/icons/electro_mechincal_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon cerulean-background"
+          />
+          <img
+            *ngIf="expertiseId == 9"
+            src="./assets/icons/facility_services_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon teal-background"
+          />
+          <img
+            *ngIf="expertiseId == 12"
+            src="./assets/icons/new icon for Utility Services.jpg"
+            alt="Business Line icon"
+            class="other-mini-icon green-background"
+          />
+          <img
+            src="./assets/images/Tripoli Waste Water Treatment Plant - Lebanon.webp"
+            alt="Business Line image"
+            class="other-img"
+          />
+
+          <div class="other-info-container">
+            <h6 class="other-info-title">
+              Tripoli Waste Water Treatment Plant
+            </h6>
+            <p class="other-info-text">Lebanon</p>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</section>

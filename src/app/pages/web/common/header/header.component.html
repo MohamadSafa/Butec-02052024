@@ -1,0 +1,113 @@
+<header [ngStyle]="{ background: getPageColor(), position: GetNavPosition() }">
+  <img
+    src="./assets/img/logo-en.svg"
+    alt="logo image"
+    class="logo"
+    style="z-index: 100;"
+    (click)="GoToHomePage()"
+  />
+  <!--<input type="checkbox" id="menu-bar" />-->
+  <label for="menu-bar" style="display: none">Menu</label>
+  <div class="w-100 hamb-mobile" style="position: relative; text-align: right; z-index: 99">
+    <button (click)="openMenu()">
+      <img
+        src="./assets/icons/images.png"
+        alt="logo image"
+        id="menu-bar"
+        style="background: #000000;"
+      />
+    </button>
+  </div>
+  <nav class="navbar" id="nav">
+    <ul>
+      <li>
+        <a href="#"
+          >Area of Expertise
+          <img
+            src="./assets/icons/arrow_down_white.svg"
+            alt="Down arrow"
+            class="arrow-down"
+        /></a>
+        <ul [ngStyle]="{ 'background-color': getPageColor() }">
+          <li class="header-first-child">
+            <a (click)="GoToPage('Engineering and Contracting')"
+              >Engineering & Contracting</a
+            >
+            <!--<a [routerLink]="['/', 'Engineering-Contracting']"
+              >Engineering & Contracting</a
+            >-->
+          </li>
+          <li class="header-first-child">
+            <a (click)="GoToPage('Electro-Mechanical Solutions')"
+              >Electro-Mechanical Solutions</a
+            >
+            <!--<a [routerLink]="['/', 'Electro-Mechanical']"
+              >Electro-Mechanical Solutions</a
+            >-->
+          </li>
+          <li class="header-first-child">
+            <a (click)="GoToPage('Facility Services')">Facility Services</a>
+            <!--<a [routerLink]="['/', 'Facility-Services']">Facility Services</a>-->
+          </li>
+          <li class="header-first-child">
+            <a (click)="GoToPage('Utility Services')">Utility Services</a>
+            <!--<a [routerLink]="['/', 'Utility-Services']">Utility Services</a>-->
+          </li>
+        </ul>
+      </li>
+      <li style="display: inline-block">
+        <a [routerLink]="['/', 'List-Projects']">Projects</a>
+      </li>
+      <li style="display: inline-block">
+        <a href="#"
+          >About<img
+            src="./assets/icons/arrow_down_white.svg"
+            alt="Down arrow"
+            class="arrow-down"
+        /></a>
+        <ul [ngStyle]="{ 'background-color': getPageColor() }">
+          <li><a [routerLink]="['/', 'Leadership']">Leadership</a></li>
+          <li><a [routerLink]="['/', 'Story']">The Story</a></li>
+          <li>
+            <a [routerLink]="['/', 'why-choose-us']">Why Choose us</a>
+          </li>
+        </ul>
+      </li>
+      <li style="display: inline-block">
+        <a [routerLink]="['/', 'List-News']">News</a>
+      </li>
+      <li style="display: inline-block">
+        <a href="#"
+          >Careers<img
+            src="./assets/icons/arrow_down_white.svg"
+            alt="Down arrow"
+            class="arrow-down"
+        /></a>
+        <ul [ngStyle]="{ 'background-color': getPageColor() }">
+          <li>
+            <a [routerLink]="['/', 'Butec-Academy']">BUTEC Academy</a>
+          </li>
+          <li><a [routerLink]="['/', 'Butec-Life']">Life at BUTEC</a></li>
+          <li><a [routerLink]="['/', 'Positions']">Open Positions</a></li>
+        </ul>
+      </li>
+      <li style="display: inline-block">
+        <a [routerLink]="['/', 'Contact']">Contact</a>
+      </li>
+      <li style="display: inline-block">
+        <a href="#"
+          >English
+          <img
+            src="./assets/icons/arrow_down_white.svg"
+            alt="Down arrow"
+            class="arrow-down"
+        /></a>
+        <ul [ngStyle]="{ 'background-color': getPageColor() }">
+          <li><a href="#">English</a></li>
+          <li><a href="#">Arabic</a></li>
+          <li><a href="#">French</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,11 @@
+<!-- main content -->
+<div class="app-wrapper">
+  <app-header *ngIf="isHeaderFooterIncluded == false"></app-header>
+  <router-outlet></router-outlet>
+  <app-footer *ngIf="isHeaderFooterIncluded == false"></app-footer>
+</div>
+<!-- <div class="main-content" [ngStyle]="responsiveContent">
+
+</div> -->
+
+<!-- main content -->

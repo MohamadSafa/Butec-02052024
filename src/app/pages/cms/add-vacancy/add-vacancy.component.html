@@ -1,0 +1,210 @@
+<div class="main-con overflow-auto">
+  <div class="row overflow-auto">
+    <div class="col-sm-12 overflow-auto">
+      <div class="card overflow-auto">
+        <div class="card-body overflow-auto">
+          <!-- Add details -->
+          <div class="row">
+            <div class="col-12 blog-details overflow-auto">
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Vacancy</label>
+                      <input
+                        id="VacancyName"
+                        name="VacancyName"
+                        class="form-control"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Vacancy Title</label>
+                      <input
+                        id="VacancyTitle"
+                        name="VacancyTitle"
+                        class="form-control"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="form-group">
+                        <label>Category Image</label>
+                        <div>
+                          <input class="form-control" type="file" />
+                          <small class="form-text text-muted"
+                            >Max. file size: 50 MB. Allowed images: jpg, gif, png.
+                            Maximum 10 images only.</small
+                          >
+                        </div>
+                      </div>-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Vacancy Position</label>
+                      <input
+                        id="VacancyName"
+                        name="VacancyName"
+                        class="form-control"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Vacancy Location</label>
+                      <input
+                        id="VacancyTitle"
+                        name="VacancyTitle"
+                        class="form-control"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Business Line</label>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-secondary dropdown-toggle col-md-12"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Select Business Line
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item active" href="#"
+                              >General Contracting</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Electro-mechanical Contracting</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Hard and Soft Facility Management</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Utility Services</a
+                            >
+                          </li>
+                          <!--<li><hr class="dropdown-divider" /></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>-->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Language</label>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-secondary dropdown-toggle col-md-12"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Select Language
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                          <li>
+                            <a class="dropdown-item active" href="#">English</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">French</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Arabic</a>
+                          </li>
+
+                          <!--<li><hr class="dropdown-divider" /></li>
+                              <li><a class="dropdown-item" href="#">Separated link</a></li>-->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-4">
+                  <label>Vacancy Description</label>
+                  <textarea
+                    id="VacancyDescription"
+                    name="VacancyDescription"
+                    cols="30"
+                    rows="6"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <div class="form-group mt-4">
+                  <label>Vacancy Notes</label>
+                  <textarea
+                    id="VacancyNotes"
+                    name="VacancyNotes"
+                    cols="30"
+                    rows="6"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <!--<div class="form-group">
+                        <label class="display-block w-100">Category Status</label>
+                        <div>
+                          <div
+                            class="custom-control custom-radio custom-control-inline"
+                          >
+                            <input
+                              class="custom-control-input"
+                              id="active"
+                              name="active-blog"
+                              value="active"
+                              type="radio"
+                              checked="categoryStatus"
+                              [(ngModel)]="categoryStatus"
+                            />
+                            <label class="custom-control-label" for="active"
+                              >Active</label
+                            >
+                          </div>
+                          <div
+                            class="custom-control custom-radio custom-control-inline"
+                          >
+                            <input
+                              class="custom-control-input"
+                              id="inactive"
+                              name="active-blog"
+                              value="inactive"
+                              type="radio"
+                              [(ngModel)]="categoryStatus"
+                            />
+                            <label class="custom-control-label" for="inactive"
+                              >Inactive</label
+                            >
+                          </div>
+                        </div>
+                      </div>-->
+                <div class="m-t-20 text-center mt-4">
+                  <a
+                    class="btn btn-primary btn-lg"
+                    (click)="AddVacancy()"
+                    href="javascript:void(0)"
+                    >Add Vacancy</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- /Add details -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

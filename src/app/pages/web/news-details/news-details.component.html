@@ -1,0 +1,235 @@
+<section class="multi-details-header-container">
+  <div class="details-header-content">
+    <div class="details-header-body gold-left-border">
+      <a class="detials-header-title move-left-15"
+        ><img
+          src="./assets/icons/back-arrow.svg"
+          alt="back arrow image"
+          class="ic_arrow"
+        />
+        <span class="detials-header-title"><strong>News</strong></span></a
+      >
+      <div class="margin-bottom-16">
+        <span class="details-header-subtitle">
+          {{ newsTitle }}
+        </span>
+      </div>
+      <div>
+        <span class="details-subtitle">{{
+          newsDate | date : "d MMMM, y"
+        }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="details-header-img-container">
+    <img
+      src="{{ image }}"
+      alt="News Main image"
+      class="details-header-img img-fluid"
+    />
+  </div>
+</section>
+
+<section class="page-text-container">
+  <div class="page-text-body">
+    <p class="news-subtitle">
+      {{ subTitle }}
+    </p>
+    <p class="news-summary">
+      {{ summary }}
+    </p>
+    <p class="news-desc">
+      {{ description }}
+    </p>
+  </div>
+</section>
+
+<section class="page-text-container">
+  <div class="page-row-body">
+    <div class="container">
+      <div class="row">
+        <div
+          *ngFor="let attachment of attachmentsList"
+          class="col-6 col-xs-6 col-s-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 details-img-container"
+        >
+          <img
+            src="{{ imageUrl }}{{ attachment.Name }}"
+            alt="Business Line image"
+            class="details-img img-fluid"
+          />
+        </div>
+        <!--<div
+        class="col-6 col-xs-6 col-s-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 details-img-container"
+      >
+        <img
+          src="./assets/images/2.webp"
+          alt="Business Line image"
+          class="details-img img-fluid"
+        />
+      </div>
+      <div
+        class="col-6 col-xs-6 col-s-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 details-img-container"
+      >
+        <img
+          src="./assets/images/3.webp"
+          alt="Business Line image"
+          class="details-img img-fluid"
+        />
+      </div>
+      <div
+        class="col-6 col-xs-6 col-s-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 details-img-container"
+      >
+        <img
+          src="./assets/images/home_image.jpg"
+          alt="Business Line image"
+          class="details-img img-fluid"
+        />
+      </div>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="other-container">
+  <h2 class="other-title">Other news</h2>
+  <div class="other-imgs-container">
+    <div class="container container-to-center">
+      <div class="row">
+        <div
+          *ngFor="let news of otherNews"
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body other-img-space"
+        >
+          <img
+            src="{{ imageUrl }}{{ news.Image }}"
+            alt="Business Line image"
+            class="other-img"
+          />
+          <div class="other-info-container">
+            <h6 class="other-info-title">
+              {{ news.Title }}
+            </h6>
+            <p class="other-info-text">
+              {{ news.CustomDate | date : "d MMMM, y" }}
+            </p>
+          </div>
+        </div>
+        <!--<div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body other-img-space"
+        >
+          <img
+            src="./assets/icons/engineering_contracting_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon red-background"
+          />
+          <img
+            src="./assets/images/Talex-Aluminium-Extrusion-Factory---UAE.webp"
+            alt="Business Line image"
+            class="other-img"
+          />
+
+          <div class="other-info-container">
+            <h6 class="other-info-title">Talex-Aluminium-Extrusion-Factory</h6>
+            <p class="other-info-text">UAE</p>
+          </div>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body other-img-space"
+        >
+          <img
+            src="./assets/icons/engineering_contracting_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon red-background"
+          />
+          <img
+            src="./assets/images/Umm-Qasr-Power-Plant---Qatar.webp"
+            alt="Business Line image"
+            class="other-img"
+          />
+
+          <div class="other-info-container">
+            <h6 class="other-info-title">Umm-Qasr-Power-Plant</h6>
+            <p class="other-info-text">Qatar</p>
+          </div>
+        </div>-->
+        <!--<div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body other-img-space"
+        >
+          <img
+            *ngIf="expertiseId == 7"
+            src="./assets/icons/engineering_contracting_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon red-background"
+          />
+          <img
+            *ngIf="expertiseId == 6"
+            src="./assets/icons/electro_mechincal_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon cerulean-background"
+          />
+          <img
+            *ngIf="expertiseId == 9"
+            src="./assets/icons/facility_services_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon teal-background"
+          />
+          <img
+            *ngIf="expertiseId == 12"
+            src="./assets/icons/new icon for Utility Services.jpg"
+            alt="Business Line icon"
+            class="other-mini-icon green-background"
+          />
+          <img
+            src="./assets/images/Tripoli Sea Outfall - Lebanon.webp"
+            alt="Business Line image"
+            class="other-img"
+          />
+
+          <div class="other-info-container">
+            <h6 class="other-info-title">Tripoli Sea Outfall</h6>
+            <p class="other-info-text">Lebanon</p>
+          </div>
+        </div>
+        <div
+          class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 other-img-body"
+        >
+          <img
+            *ngIf="expertiseId == 7"
+            src="./assets/icons/engineering_contracting_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon red-background"
+          />
+          <img
+            *ngIf="expertiseId == 6"
+            src="./assets/icons/electro_mechincal_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon cerulean-background"
+          />
+          <img
+            *ngIf="expertiseId == 9"
+            src="./assets/icons/facility_services_white.svg"
+            alt="Business Line icon"
+            class="other-mini-icon teal-background"
+          />
+          <img
+            *ngIf="expertiseId == 12"
+            src="./assets/icons/new icon for Utility Services.jpg"
+            alt="Business Line icon"
+            class="other-mini-icon green-background"
+          />
+          <img
+            src="./assets/images/Tripoli Waste Water Treatment Plant - Lebanon.webp"
+            alt="Business Line image"
+            class="other-img"
+          />
+
+          <div class="other-info-container">
+            <h6 class="other-info-title">
+              Tripoli Waste Water Treatment Plant
+            </h6>
+            <p class="other-info-text">Lebanon</p>
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,854 @@
+<!--Home image section, code starts here -->
+<section class="home text-to-center">
+  <div class="section">
+    <!--<img
+      src="./assets/images/Home-Image.jpg"
+      alt="Home image"
+      class="home-img"
+    />-->
+    <img src="{{ imageUrl }}{{ image }}" alt="Home image" class="home-img" />
+    <!--<img
+        src="./assets/images/BUTEC WEBP.webp"
+        alt="logo image"
+        class="logo"
+      />
+
+      <label class="hamb" for="side-menu"
+        ><img
+          src="./assets/icons/hamburger_white.svg"
+          alt="Hamburger Menu"
+          class="hamb-line"
+      /></label>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="#"
+              >Business Lines<img
+                src="./assets/icons/arrow_down_white.svg"
+                alt="Down arrow"
+                class="arrow-down"
+            /></a>
+            <ul class="sub-menu">
+              <li>
+                <a [routerLink]="['/', 'Engineering-Contracting']"
+                  >Engineering & Contracting</a
+                >
+              </li>
+              <li>
+                <a [routerLink]="['/', 'Electro-Mechanical']"
+                  >Electro-Mechanical Solutions</a
+                >
+              </li>
+              <li>
+                <a [routerLink]="['/', 'Facility-Services']"
+                  >Facility Services</a
+                >
+              </li>
+              <li>
+                <a [routerLink]="['/', 'Utility-Services']">Utility Services</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a [routerLink]="['/', 'List-Projects']">Projects</a>
+          </li>
+          <li>
+            <a href="#"
+              >About<img
+                src="./assets/icons/arrow_down_white.svg"
+                alt="Down arrow"
+                class="arrow-down"
+            /></a>
+            <ul class="sub-menu">
+              <li><a [routerLink]="['/', 'Leadership']">Leadership</a></li>
+              <li><a [routerLink]="['/', 'Story']">Story</a></li>
+              <li>
+                <a [routerLink]="['/', 'why-choose-us']">Why Choose us</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a [routerLink]="['/', 'List-News']">News</a>
+          </li>
+          <li>
+            <a href="#"
+              >Careers<img
+                src="./assets/icons/arrow_down_white.svg"
+                alt="Down arrow"
+                class="arrow-down"
+            /></a>
+            <ul class="sub-menu">
+              <li>
+                <a [routerLink]="['/', 'Butec-Academy']">BUTEC Academy</a>
+              </li>
+              <li><a [routerLink]="['/', 'Butec-Life']">Life at BUTEC</a></li>
+            </ul>
+          </li>
+          <li>
+            <a [routerLink]="['/', 'Contact']">Contact</a>
+          </li>
+          <li>
+            <a href="#"
+              >English
+              <img
+                src="./assets/icons/arrow_down_white.svg"
+                alt="Down arrow"
+                class="arrow-down"
+            /></a>
+            <ul class="sub-menu">
+              <li><a href="#">English</a></li>
+              <li><a href="#">Arabic</a></li>
+              <li><a href="#">French</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>-->
+
+    <!-- The navigation menu -->
+    <!--<div class="navbar">
+        <a href="#home">Home</a>
+        <div class="subnav">
+          <button class="subnavbtn">
+            Business Lines
+            <img
+              src="./assets/icons/arrow_down_white.svg"
+              alt="Down arrow"
+              class="arrow-down"
+            />
+          </button>
+          <div class="subnav-content">
+            <a [routerLink]="['/', 'Engineering-Contracting']"
+              >Engineering & Contracting</a
+            >
+            <a [routerLink]="['/', 'Electro-Mechanical']"
+              >Electro-Mechanical Solutions</a
+            >
+            <a [routerLink]="['/', 'Facility-Services']">Facility Services</a>
+            <a [routerLink]="['/', 'Utility-Services']">Utility Services</a>
+          </div>
+        </div>
+        <a [routerLink]="['/', 'News']">News</a>
+
+        <div class="subnav">
+          <button class="subnavbtn">
+            Careers<img
+              src="./assets/icons/arrow_down_white.svg"
+              alt="Down arrow"
+              class="arrow-down"
+            />
+          </button>
+          <div class="subnav-content">
+            <a [routerLink]="['/', 'Butec-Academy']">BUTEC Academy</a>
+            <a [routerLink]="['/', 'Butec-Life']">Life at BUTEC</a>
+            <a href="#link3">Link 3</a>
+            <a href="#link4">Link 4</a>
+          </div>
+        </div>
+        <a href="#contact">Contact</a>
+        <div class="subnav">
+          <button class="subnavbtn">
+            English
+            <img
+              src="./assets/icons/arrow_down_white.svg"
+              alt="Down arrow"
+              class="arrow-down"
+            />
+          </button>
+          <div class="subnav-content">
+            <a href="#">English</a>
+            <a href="#">Arabic</a>
+            <a href="#">French</a>
+          </div>
+        </div>
+      </div>-->
+
+    <!--<nav id="navbar" class="text-nowrap">
+        <ul>
+          <li class="dropdown-content">
+            <a>Business Lines <i class="fa fa-angle-down"></i></a>
+            <ul class="business-sub-menu sub-menu">
+              <li><a href="#">Engineering & Contracting</a></li>
+              <li><a href="#">Electro-Mechanical Solutions</a></li>
+              <li><a href="#">Facility Services</a></li>
+              <li><a href="#">Utility Services</a></li>
+            </ul>
+          </li>
+          <li><a [routerLink]="['/', 'Projects-List']">Projects</a></li>
+          <li>
+            <a [routerLink]="['/', 'Leadership']"
+              >About <i class="fa fa-angle-down"></i
+            ></a>
+          </li>
+          <li><a [routerLink]="['/', 'News-List']">News</a></li>
+          <li>
+            <a>Careers <i class="fa fa-angle-down"></i></a>
+          </li>
+          <li><a>Contact</a></li>
+          <li>
+            <a href="#"><i class="fa fa-fw fa-search"></i></a>
+          </li>
+          &nbsp;&nbsp;
+          <li>
+            <a>English <i class="fa fa-angle-down"></i></a>
+          </li>
+        </ul>
+      </nav>-->
+    <!--<div class="topnav">
+      <a>Business Lines <i class="fa fa-angle-down"></i></a>
+      <a>Projects</a>
+      <a>About <i class="fa fa-angle-down"></i></a>
+      <a>News</a>
+      <a>Careers <i class="fa fa-angle-down"></i></a>
+      <a href="#"><i class="fa fa-fw fa-search"></i></a>
+      <a>English <i class="fa fa-angle-down"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>-->
+    <!--<nav>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="./assets/images/Butec.png"
+            alt="logo image"
+            class="logo"
+          />
+        </div>
+        <div class="nav-links">
+          <ul class="links">
+            <li>
+              <a href="#"
+                >Business Lines
+                <i class="fa fa-angle-down arrow business-arrow"></i
+              ></a>
+              <ul class="business-sub-menu sub-menu">
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Web design</a></li>
+                <li class="more">
+                  <a href="#">More</a>
+                  <i class="fa fa-angle-right arrow more-arrow"></i>
+                  <ul class="more-sub-menu sub-menu">
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Web design</a></li>
+                    <li><a href="#">Web design</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Projects</a></li>
+            <li>
+              <a href="#"
+                >About <i class="fa fa-angle-down arrow about-arrow"></i
+              ></a>
+              <ul class="about-sub-menu sub-menu">
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Web design</a></li>
+              </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li>
+              <a href="#"
+                >Careers <i class="fa fa-angle-down arrow careers-arrow"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-fw fa-search"></i></a>
+            </li>
+            <li>
+              <a href="#">
+                English <i class="fa fa-angle-down arrow lang-arrow"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class="fa fa-fw fa-search"></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+    </nav>-->
+    <!--<div class="home-img-group">
+      <h1 class="home-img-title">Our expertise, your growth.</h1>
+      <h2 class="home-img-subtitle">Partnering in progress</h2>
+      <p class="home-img-text">
+        We are committed to unleashing the potential of cutting-edge<br />engineering
+        in every project.
+      </p>-->
+    <div class="home-img-group">
+      <h1 class="home-img-title">{{ title }}</h1>
+      <h2 class="home-img-subtitle">{{ subTitle }}</h2>
+      <p class="home-img-text">
+        {{ paragraph1 }}
+      </p>
+
+      <!--<button class="home-img-btn"><strong>LET'S DISCUSS</strong></button>-->
+      <!--<div class="container">
+        <div class="row">
+          <div
+            class="col-3 col-xs-3 col-s-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"
+          >
+            <a href="Eng_and_Con.html">
+              <div class="rounded-circle circle">
+                <img
+                  src="./assets/icons/ic_expertise_1_red.svg"
+                  alt="Home image"
+                  class="circle-icon"
+                />
+                <p class="circle-title">ENGINEERING AND CONTRACTING</p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-3 col-xs-3 col-s-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"
+          >
+            <a href="Electro_mech.html">
+              <div class="rounded-circle circle">
+                <img
+                  src="./assets/icons/ic_expertise_2_cerulean.svg"
+                  alt="Home image"
+                  class="circle-icon"
+                />
+                <p class="circle-title">ELECTRO-MECHANICAL SOLUTIONS</p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-3 col-xs-3 col-s-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"
+          >
+            <a href="Facility_Service.html">
+              <div class="rounded-circle circle">
+                <img
+                  src="./assets/icons/ic_expertise_3_teal.svg"
+                  alt="Home image"
+                  class="circle-icon"
+                />
+                <p class="circle-title">FACILITIES SERVICES</p>
+              </div>
+            </a>
+          </div>
+          <div
+            class="col-3 col-xs-3 col-s-3 col-sm-3 col-md-3 col-lg-3 col-xl-3"
+          >
+            <a href="Utility_Service.html">
+              <div class="rounded-circle circle">
+                <img
+                  src="./assets/icons/ic_expertise_4_green.svg"
+                  alt="Home image"
+                  class="circle-icon"
+                />
+                <p class="circle-title">UTILITIES SERVICES</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </div>
+</section>
+<!--Home image section, code ends here -->
+
+<!-- Business lines circles, code starts here -->
+<section class="circles-container">
+  <div class="container home-qoute-text-content">
+    <!--<div class="row text-to-center">
+        <div
+          class="col-2 col-xs-2 col-s-2 col-sm-2 col-md-2 col-lg-2 col-xl-2"
+        >-->
+    <img
+      src="./assets/icons/double_qoutation.svg"
+      alt=""
+      class="home-qoutation-icon"
+      style="float: left; margin-right: 20px"
+    />
+    <!--</div>
+        <div
+          class="mt-3 col-10 col-xs-10 col-s-10 col-sm-10 col-md-10 col-lg-10 col-xl-10"
+        >-->
+    <p class="home-qoutation-text ml-4" style="float: left">
+      Our seasoned track record and extensive expertise makes us your go-to
+      partner for a variety of needs.
+    </p>
+    <!--</div>
+      </div>-->
+  </div>
+  <br />
+  <div
+    style="
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px;
+    "
+  >
+    <div class="container container-to-center">
+      <div class="row">
+        <div
+          class="col-3 col-xs-3 col-s-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 circle-div space-btn-divs1"
+        >
+          <div class="rounded-circle circle">
+            <a
+              class="remove-underline"
+              [routerLink]="['/', 'Engineering-Contracting']"
+            >
+              <img
+                src="./assets/icons/engineering_contracting_red.svg"
+                alt="Home image"
+                class="circle-icon"
+              />
+              <p class="circle-title">
+                <strong>ENGINEERING AND<br />CONTRACTING</strong>
+              </p>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-3 col-xs-3 col-s-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 circle-div space-btn-divs1"
+        >
+          <div class="rounded-circle circle" style="float: left">
+            <a
+              class="remove-underline"
+              [routerLink]="['/', 'Electro-Mechanical']"
+            >
+              <img
+                src="./assets/icons/electro_mechincal_cerulean.svg"
+                alt="Home image"
+                class="circle-icon"
+              />
+              <p class="circle-title">
+                <strong>ELECTRO-MECHANICAL<br />SOLUTIONS</strong>
+              </p>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-3 col-xs-3 col-s-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 circle-div space-btn-divs1"
+        >
+          <div class="rounded-circle circle" style="float: left">
+            <a
+              class="remove-underline"
+              [routerLink]="['/', 'Facility-Services']"
+            >
+              <img
+                src="./assets/icons/facility_services_teal.svg"
+                alt="Home image"
+                class="circle-icon"
+              />
+              <p class="circle-title"><strong>FACILITY SERVICES</strong></p>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-3 col-xs-3 col-s-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 circle-div space-btn-divs1"
+        >
+          <div class="rounded-circle circle" style="float: left">
+            <a
+              class="remove-underline"
+              [routerLink]="['/', 'Utility-Services']"
+            >
+              <img
+                src="./assets/icons/new icon for Utility Services.jpg"
+                alt="Home image"
+                class="circle-icon"
+              />
+              <p class="circle-title"><strong>UTILITY SERVICES</strong></p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Business lines circles, code ends here -->
+
+<!-- Performance, code starts here -->
+<section class="perform">
+  <h2 class="perform-title">Performance in Numbers</h2>
+  <p class="perform-text">
+    Through milestones and measurable results and achievements, our<br />success
+    story is told by the numbers.
+  </p>
+  <div class="container">
+    <div class="row perform-box-container">
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 perform-box space-btn-divs1"
+      >
+        <h5 class="perform-box-title">60+</h5>
+        <p class="perform-box-text">
+          years accumulating experience in<br />the market
+        </p>
+      </div>
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 perform-box space-btn-divs1"
+      >
+        <h5 class="perform-box-title">21</h5>
+        <p class="perform-box-text">countries spread across 3 major<br />economic regions</p>
+      </div>
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 perform-box space-btn-divs1"
+      >
+        <h5 class="perform-box-title">7,500+</h5>
+        <p class="perform-box-text">
+          stand dedicated team
+        </p>
+      </div>
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 perform-box space-btn-divs1"
+      >
+        <h5 class="perform-box-title">35+</h5>
+        <p class="perform-box-text">nationalities</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Performance, code ends here -->
+
+<!-- Home - Projects, code starts here -->
+<section class="projects">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"
+      >
+        <h2 class="projects-title-home">Projects</h2>
+        <p class="projects-text">
+          Some of the biggest projects<br />that stand out for us.
+        </p>
+        <button class="projects-btn" [routerLink]="['/', 'List-Projects']">
+          <strong>BROWSE ALL</strong>
+        </button>
+      </div>
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-9 col-lg-9 col-xl-9"
+      >
+        <img
+          src="{{ projectImage }}"
+          alt="join image"
+          class="projects-img1 img-fluid"
+        />
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-9 col-lg-9 col-xl-9"
+            >
+              <div style="text-align: left; margin-left: -15px" class="mt-3">
+                <span class="projects-img-title">{{ projectTitle }}</span
+                ><br />
+                <span class="projects-img-subtile">{{ projectLocation }}</span>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-3 col-lg-3 col-xl-3"
+            >
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="col-4 col-xs-4 col-s-4 col-sm-4 col-md-6 col-lg-6 col-xl-6"
+                  >
+                    <div
+                      class="rounded-circle back-arrow float-right mt-3 text-to-center"
+                    >
+                      <a (click)="SelectImage(projectImage)"
+                        ><img
+                          src="./assets/icons/back-arrow.svg"
+                          alt="back arrow image"
+                          class="ic_arrow mt-3"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-xs-4 col-s-4 col-sm-4 col-md-6 col-lg-6 col-xl-6"
+                  >
+                    <div class="rounded-circle next-arrow float-right mt-3">
+                      <a (click)="SelectImage(projectImage)"
+                        ><img
+                          src="./assets/icons/forward-arrow.svg"
+                          alt="forward arrow image"
+                          class="ic_arrow mt-3"
+                      /></a>
+                    </div>
+                  </div>
+                  <div
+                    class="col-4 col-xs-4 col-s-4 col-sm-4 col-md-6 col-lg-6 col-xl-6"
+                  >
+                    <button
+                      class="projects-btn-media"
+                      [routerLink]="['/', 'List-Projects']"
+                    >
+                      <strong>BROWSE ALL</strong>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--<div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 container1"
+      >
+        <img
+          src="./assets/images/Tour Mohammed VI - Maroc12.webp"
+          alt="join image"
+          class="projects-img2"
+        />
+      </div>-->
+    </div>
+  </div>
+</section>
+<!-- Home - Projects, code ends here -->
+
+<!-- Clients, code starts here -->
+<section class="clients" id="clientss">
+  <h2 class="clients-title">
+    Trusted by industry leaders, our valued clients include…
+  </h2>
+  <div class="clients-icon-container">
+    <img src="./assets/images/hsbc.png" alt="hsbc logo" class="client-icon" />
+  </div>
+  <div class="clients-icon-container">
+    <img
+      src="./assets/images/2021_Renault_Group_logo.png"
+      alt="Renault logo"
+      class="client-icon"
+    />
+  </div>
+  <div class="clients-icon-container">
+    <img
+      src="./assets/images/royal-air-maroc.png"
+      alt="Royal Air logo"
+      class="client-icon"
+    />
+  </div>
+  <div class="clients-icon-container">
+    <img
+      src="./assets/images/HZI_Logo_RGB_T.png"
+      alt="HZI logo"
+      class="client-icon"
+    />
+  </div>
+  <div class="clients-icon-container">
+    <img
+      src="./assets/images/Bank_Al-Maghrib_logo.png"
+      alt="Bank Al Maghrib logo"
+      class="client-icon"
+    />
+  </div>
+  <div class="clients-icon-container">
+    <img
+      src="./assets/images/suez-logo-1.png"
+      alt="Suez logo"
+      class="client-icon"
+    />
+  </div>
+  <div class="clients-icon-container">
+    <img
+      src="./assets/images/orange-logo-vector.png"
+      alt="Orange logo"
+      class="client-icon"
+    />
+  </div>
+  <div class="clients-icon-container-last">
+    <img
+      src="./assets/images/TotalEnergies.png"
+      alt="Total energies logo"
+      class="client-icon"
+    />
+  </div>
+</section>
+<!-- Clients, code ends here -->
+
+<!-- Environment, code starts here -->
+<section class="env">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 env-image-container"
+      >
+        <img
+          src="./assets/images/Environmental-and-Social-Image.webp"
+          alt="Environmental and social image"
+          class="env-img"
+        />
+      </div>
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 env-desc space-btn-divs2"
+      >
+        <h2 class="env-desc-title">
+          Environmental, social, and corporate governance
+        </h2>
+        <p class="env-desc-subtitle">
+          <strong>1.&nbsp;&nbsp;We prioritise diversity and inclusion</strong>
+        </p>
+        <p class="env-desc-text">
+          Fostering an environment where diverse perspectives thrive, fuelling
+          innovation and industry success.
+        </p>
+        <p class="env-desc-subtitle">
+          <strong
+            >2.&nbsp;&nbsp;We are committed to stringent monitoring</strong
+          >
+        </p>
+        <p class="env-desc-text">
+          We ensure compliance with health, safety, and environmental standards,
+          <br />
+          aligning with sustainable business practices.
+        </p>
+        <p class="env-desc-subtitle">
+          <strong>3.&nbsp;&nbsp;We value sustainability</strong>
+        </p>
+        <p class="env-desc-text">
+          Our dedication to quality extends to safeguarding the environment,
+          <br />
+          adapting to diverse project needs for sustainable growth.
+        </p>
+        <div class="env-btn-container">
+          <button class="env-desc-btn" [routerLink]="['/', 'Leadership']">
+            <strong>LEARN MORE</strong>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Environment, code ends here -->
+
+<!-- Address, code starts here -->
+<section class="address">
+  <div class="container">
+    <div class="row f-container">
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-0"
+      >
+        <h2 class="address-title">Our reach is evermore<br />expanding…</h2>
+        <p class="address-text">
+          We operate across 21 countries, spanning the MENA region and
+          <br />
+          Africa, where we provide our expertise in a
+          <br />
+          comprehensive coverage.
+        </p>
+        <div class="env-btn-container">
+          <button class="address-btn" [routerLink]="['/', 'Contact']">
+            <strong>WORK WITH US</strong>
+          </button>
+        </div>
+      </div>
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+      >
+        <img
+          src="./assets/images/Contact-Home-Map.svg"
+          alt="Home Map Image"
+          class="address-map img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Address, code Ends here -->
+
+<!-- Join-us, code starts here -->
+<section class="join-us">
+  <div class="container">
+    <div class="row">
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 join-us-img-container"
+      >
+        <img
+          src="./assets/images/Join-Our-Ranks.webp"
+          alt="join image"
+          class="join-us-img"
+        />
+      </div>
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 join-us-desc"
+      >
+        <h2 class="join-us-title">Join our ranks and let’s grow together</h2>
+        <p class="join-us-desc-text desktop-show">
+          Our commitment to nurturing talent goes beyond recruitment; it’s<br />
+          about fostering growth within our team. <br />
+          We help our teams achieve professional development through The
+          <br />
+          Academy, an exclusive program designed to empower our <br />
+          employees. <br />This comprehensive initiative offers tailored
+          training modules, <br />
+          workshops, and mentorship opportunities crafted to support
+          <br />
+          career advancement. <br />
+          Join us and unlock your potential where career growth is our
+          <br />
+          priority.
+        </p>
+        <p class="join-us-desc-text mobile-show">
+          Our commitment to nurturing talent goes beyond recruitment; it’s about
+          fostering growth within our team. We help our teams achieve
+          professional development through The Academy, an exclusive program
+          designed to empower our employees. This comprehensive initiative
+          offers tailored training modules, workshops, and mentorship
+          opportunities crafted to support career advancement. Join us and
+          unlock your potential where career growth is our priority.
+        </p>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3 join-us-life-btn-container"
+            >
+              <button
+                class="join-us-life-btn"
+                [routerLink]="['/', 'Butec-Academy']"
+              >
+                <strong>BUTEC ACADEMY</strong>
+              </button>
+            </div>
+            <div
+              class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 join-us-life-btn-container"
+            >
+              <button
+                class="join-us-browse-btn"
+                [routerLink]="['/', 'Positions']"
+              >
+                <strong>BROWSE POSITIONS</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Join-us, code ends here -->
+
+<!-- Reach-out, code starts here -->
+<section class="reach">
+  
+  <div class="container">
+    <div class="row reach-out">
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+      >
+        <h2 class="reach-discuss-title">Have a project where we can help?</h2>
+        <button class="reach-discuss-btn" [routerLink]="['/', 'Contact']">
+          <strong>LET'S DISCUSS</strong>
+        </button>
+      </div>
+      <div
+        class="col-12 col-xs-12 col-s-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"
+      >
+        <h2 class="reach-discuss-title">Got something to share with us?</h2>
+        <button class="reach-discuss-btn" [routerLink]="['/', 'Contact']">
+          <strong>GIVE FEEDBACK</strong>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>

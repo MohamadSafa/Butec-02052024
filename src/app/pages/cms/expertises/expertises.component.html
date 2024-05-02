@@ -1,0 +1,215 @@
+<form class="main-con">
+  <div class="row form-group mt-4">
+    <div>
+      <h1>Expertise</h1>
+    </div>
+    <div class="row form-group mt-4">
+      <div class="col-md-3">
+        <select
+          class="form-control"
+          id="businessLineSelect"
+          (change)="ExpertiseSelectionChange($event)"
+        >
+          <option value="-1">Select Business Line</option>
+          <option value="8">General Contracting Expertise</option>
+          <option value="9">Electro Mechanical Contracting Expertise</option>
+          <option value="10">
+            Hard and Soft Facility Management Expertise
+          </option>
+          <option value="11">Utility Services Expertise</option>
+        </select>
+      </div>
+      <div class="col-md-9">
+        <button
+          type="button"
+          class="btn btn-secondary buttons"
+          (click)="AddExpertise()"
+        >
+          <i class="bi bi-plus"> </i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row form-group mt-4">
+    <div class="col-md-12">
+      <table class="table align-middle mb-0 bg-white mt-2 overflow-auto w-100">
+        <thead class="bg-light">
+          <tr>
+            <th class="text-nowrap">Title</th>
+            <th>Introduction</th>
+            <th>Summary</th>
+            <th>Description</th>
+            <th>Section</th>
+            <!---<th class="text-nowrap">Role of BUTEC</th>
+                <th class="text-nowrap">Execution Period</th>
+                <th class="text-nowrap">Financing</th>
+                <th class="text-nowrap">Type of Contract</th>
+                <th class="text-nowrap">Contractor for Process</th>
+                <th>Employer</th>
+                <th class="text-nowrap">Delegated Employer</th>-->
+            <th>Language</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of expertise">
+            <td class="mr-2">
+              <div class="d-flex align-items-center">
+                <img
+                  src="{{ imageUrl }}{{ item.Image }}"
+                  alt=""
+                  style="width: 45px; height: 45px"
+                  class="rounded-circle"
+                />
+                <div class="ms-3 mr-2">
+                  <p class="fw-bold mb-1 text-wrap mr-2">
+                    {{ item.Title }}
+                  </p>
+                  <!--<p class="fw-bold mb-1 text-wrap mr-2">Project Name</p>-->
+                  <!--<p class="text-muted mb-0">john.doe@gmail.com</p>-->
+                </div>
+              </div>
+            </td>
+            <td>
+              <p class="fw-normal mb-1 text-wrap overflow-auto">
+                {{ item.Paragraph1 }}
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#descriptionModal"
+                  class="btn btn-link btn-sm btn-rounded"
+                  (click)="DescriptionDialog(item.Title, item.Paragraph1)"
+                  >Read More</a
+                >
+              </p>
+              <!--<p class="fw-normal mb-1 text-wrap overflow-auto">
+                    Masdar and Bee’ah jointly developed the first Waste-to-Energy
+                    plant in the United Arab Emirates.
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#descriptionModal"
+                      class="btn btn-link btn-sm btn-rounded"
+                      >Read More</a
+                    >
+                  </p>-->
+              <!--<p class="text-muted mb-0">IT department</p>-->
+            </td>
+            <td>
+              <p class="fw-normal mb-1 text-wrap overflow-auto">
+                {{ item.Paragraph2 }}
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#descriptionModal"
+                  class="btn btn-link btn-sm btn-rounded"
+                  (click)="DescriptionDialog(item.Title, item.Paragraph2)"
+                  >Read More</a
+                >
+              </p>
+              <!--<p class="fw-normal mb-1 text-wrap overflow-auto">
+                    Masdar and Bee’ah jointly developed the first Waste-to-Energy
+                    plant in the United Arab Emirates.
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#descriptionModal"
+                      class="btn btn-link btn-sm btn-rounded"
+                      >Read More</a
+                    >
+                  </p>-->
+              <!--<p class="text-muted mb-0">IT department</p>-->
+            </td>
+            <td>
+              <p class="fw-normal mb-1 text-wrap overflow-auto">
+                {{ item.Paragraph3 }}
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#descriptionModal"
+                  class="btn btn-link btn-sm btn-rounded"
+                  (click)="DescriptionDialog(item.Title, item.Paragraph3)"
+                  >Read More</a
+                >
+              </p>
+              <!--<p class="fw-normal mb-1 text-wrap overflow-auto">
+                    Masdar and Bee’ah jointly developed the first Waste-to-Energy
+                    plant in the United Arab Emirates.
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#descriptionModal"
+                      class="btn btn-link btn-sm btn-rounded"
+                      >Read More</a
+                    >
+                  </p>-->
+              <!--<p class="text-muted mb-0">IT department</p>-->
+            </td>
+            <td *ngIf="item.CategoryId == 8">General Contracting Expertise</td>
+            <td *ngIf="item.CategoryId == 9">
+              Electro Mechanical Contracting Expertise
+            </td>
+            <td *ngIf="item.CategoryId == 10">
+              Hard and Soft Facility Management Expertise
+            </td>
+            <td *ngIf="item.CategoryId == 11">Utility Services Expertise</td>
+            <!--<td>
+                  <span class="badge badge-success rounded-pill d-inline">Active</span>
+                </td>-->
+            <!--<td>{{ project.RoleofButec }}</td>
+                <td>{{ project.ExecutionPeriod }}</td>
+                <td>{{ project.Financing }}</td>
+                <td>
+                  {{ project.TypeofContract }}
+                </td>
+                <td>{{ project.Contractorforprocess }}</td>
+                <td>{{ project.Employer }}</td>
+                <td>{{ project.DelegatedEmployer }}</td>
+                <td>{{ project.Location }}</td>
+                <td>{{ project.DelegatedEmployer }}</td>-->
+            <td *ngIf="item.LanguageId == 2">English</td>
+            <td *ngIf="item.LanguageId == 3">Frensh</td>
+            <td *ngIf="item.LanguageId == 1">Arabic</td>
+            <td>
+              <tr>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-link btn-sm btn-rounded"
+                    (click)="EditExpertise(item.EntityId)"
+                  >
+                    <i class="bi bi-pencil-square"></i>
+                  </button>
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    class="btn btn-link btn-sm btn-rounded"
+                    (click)="RemoveExpertise(item.EntityId)"
+                  >
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </td>
+              </tr>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</form>
+
+<!-- Large modal -->
+<section>
+  <div
+    class="modal fade bd-example-modal-xl"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="myLargeModalLabel"
+    aria-hidden="true"
+    id="descriptionModal"
+  >
+    <div class="modal-dialog modal-xl modal-dialog-centered mw-100 w-50">
+      <div class="modal-content">
+        <h1>Expertise: {{ modalTitle }}</h1>
+        <p>
+          {{ modalDescription }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
